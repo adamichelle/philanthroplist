@@ -1,0 +1,8 @@
+{
+    "functions": {
+      "api/addCharities.js": {
+        "includeFiles": "_files/**"
+      }
+    }
+  }
+  
