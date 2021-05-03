@@ -1,10 +1,10 @@
-const firestore = require('./lib/firebase');
+const db = require('./lib/firebase');
 
 module.exports = async (req, res) => {
     const { page = 1, limit = 10 } = req.query;
     const offset = (page - 1) * limit
     try {
-        const collectionRef = firestore.collection('charities').orderBy("name").limit(limit).offset(offset);
+        const collectionRef = db.collection('charities').orderBy("name").limit(limit).offset(offset);
         const snapshot = await collectionRef.get();
         let charities = [];
         snapshot.forEach((doc) => {
