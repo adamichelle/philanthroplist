@@ -15,4 +15,57 @@ code {
 
 .p-title {
   font-family: 'Playfair Display', serif;
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+.p-btn-gold {
+  background-color: #E69B55 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+.p-btn-gold:hover {
+  background-color: #C6803F !important;
+  color: #FFFFFF;
+}
+
+.p-text-gold {
+  color: #C6803F !important;
+}
+
+.p-text-peach-puff {
+  color: #FFDAA6 !important;
+}
+
+.p-bg-gold {
+  background-color: #C6803F;
+}
+
+.p-bg-peach-puff {
+  background-color: #FFDAA6;
+}
+
+.p-bg-greyish-brown {
+  background-color: #826C5F;
+}
+
+.p-text-greyish-brown {
+  color: #826C5F;
+}
+
+.p-text-greyish-green {
+  color: #6E7E74;
+}
+
+.p-bg-greyish-green {
+  background-color: #6E7E74;
+}
+
+hr.special {
+	width: 250px;
+	height: 3px;
+	background-color: #6E7E74;
+	border: 0;
+	margin-bottom: 50px;
 }

@@ -1,7 +1,9 @@
 const db = require('./lib/firebase');
 
 module.exports = async (req, res) => {
-    const { page = 1, limit = 10 } = req.query;
+    let { page = 1, limit = 10 } = req.query;
+    page = parseInt(page);
+    limit = parseInt(limit)
     const offset = (page - 1) * limit
     try {
         const collectionRef = db.collection('charities').orderBy("name").limit(limit).offset(offset);
@@ -14,6 +16,7 @@ module.exports = async (req, res) => {
         });
         res.status(200).json({ success: true, data: charities, message: "charities received" });
     } catch (error) {
+        console.log(error)
         res.status(500).json({ success:false, data: null, message: "An error occured. Error:" + error.message })
     }
 }

@@ -1,44 +1,101 @@
-main {
-  align-content: center;
-  box-sizing: border-box;
-  display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  hyphens: auto;
-  line-height: 1.65;
-  margin: 0 auto;
-  max-width: 680px;
-  min-height: 100vh;
-  padding: 72px 0;
-  text-align: center;
+.k-appbar {
+  background-color: transparent;
 }
-h1 {
-  font-size: 45px;
+
+.k-appbar ul {
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
-h2 {
-  margin-top: 1.5em;
+.k-appbar li {
+  margin: 0 10px;
 }
-p {
-  font-size: 16px;
+
+.k-appbar li a {
+  color: #FFFFFf;
 }
-a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
+
+.k-appbar li a:hover {
   cursor: pointer;
+  color: #FFDAA6;
+  font-weight: bold;
   text-decoration: none;
-  transition: all 0.2s ease;
 }
-a:hover {
-  border-bottom: 1px solid #0076ff;
+
+header {
+  background-color: transparent;
 }
-code,
-pre {
-  color: #d400ff;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 0.92em;
+
+.hero {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  height: 400px;
+  width: 100%;
+  z-index: -2;
 }
-code:before,
-code:after {
-  content: '\`';
+
+.banner {
+  max-width: 100%;
+  background: url(/images/banner-image.jpg) no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  z-index: -2;
+}
+
+.banner-content-area {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: #7C6C63;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+}
+
+.banner-content-area  h1 {
+font: 3em "Raleway", sans-serif;
+font-weight: bold;
+text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+margin-bottom: 15px;
+}
+
+.banner-content-area  h3 {
+font: 1.5em "Raleway", sans-serif;
+font-weight: 300;
+text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+margin-bottom: 40px;
+}
+
+footer {
+  background-color: #826C5F;
+  color: #FFFFFf;
+}
+
+footer a {
+  color: #FFDAA6;
+}
+
+footer a:hover {
+  color: #FFDAA6;
+}
+
+footer hr {
+  background-color: #FFDAA6;
+}
+
+.attribution-links {
+  font-size: 0.6em;
+}
+
+.attribution-links p {
+  margin-bottom: 0;
 }

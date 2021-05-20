@@ -1,56 +1,31 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faFaucet, faBookReader } from "@fortawesome/free-solid-svg-icons";
+import '@progress/kendo-theme-bootstrap/dist/all.css';
 import './App.css';
+import Header from './layout/Header';
+import Main from './layout/Main';
+import Footer from './layout/Footer';
+
+library.add(fab, faFaucet, faBookReader);
 
 function App() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+  const [navType, setNavType] = useState("landing");
+
+  const getNavType = (navType) => {
+    setNavType(navType);
+  }
+
   return (
-    <main>
-      <h1>Create React App + Go API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/main/examples/create-react-app"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        was bootstrapped with{' '}
-        <a href="https://facebook.github.io/create-react-app/">
-          Create React App
-        </a>{' '}
-        and contains three directories, <code>/public</code> for static assets,{' '}
-        <code>/src</code> for components and content, and <code>/api</code>{' '}
-        which contains a serverless <a href="https://golang.org/">Go</a>{' '}
-        function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Go
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Go is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
-    </main>
+    <React.Fragment>  
+      <Header navType={navType} />
+      <main style={{minHeight: 450}}>
+        <Main getNavType={getNavType} />
+      </main>
+      <Footer />
+    </React.Fragment>
   );
 }
 
