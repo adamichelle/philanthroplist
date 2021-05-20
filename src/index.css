@@ -39,23 +39,23 @@ code {
 }
 
 .p-bg-gold {
-  background-color: #C6803F;
+  background-color: #C6803F !important;
 }
 
 .p-bg-peach-puff {
-  background-color: #FFDAA6;
+  background-color: #FFDAA6 !important;
 }
 
 .p-bg-greyish-brown {
-  background-color: #826C5F;
+  background-color: #826C5F !important;
 }
 
 .p-text-greyish-brown {
-  color: #826C5F;
+  color: #826C5F !important;
 }
 
 .p-text-greyish-green {
-  color: #6E7E74;
+  color: #6E7E74 !important;
 }
 
 .p-bg-greyish-green {

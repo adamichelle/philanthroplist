@@ -8,13 +8,13 @@ import {
 function Nav(props) {
     return (
         <React.Fragment>
-            <AppBar>
+            <AppBar className="p-main-nav">
                 <AppBarSection>
                     <img src="/images/logo.png" alt="" width={50} height={50} className="logo" />
                 </AppBarSection>
 
                 <AppBarSection>
-                    <h1 className="p-title">Philanthroplist</h1>
+                    <h1 className="p-title mt-1 p-text-gold">Philanthroplist</h1>
                 </AppBarSection>
 
                 <AppBarSpacer />
@@ -22,10 +22,10 @@ function Nav(props) {
                 <AppBarSection>
                     <ul>
                         <li>
-                        <a href="/">About</a>
+                            <a href="/" className="p-text-gold">About</a>
                         </li>
                         <li>
-                        <a href="/charities">Explore</a>
+                            <a href="/charities" className="p-text-gold">Explore</a>
                         </li>
                     </ul>
                 </AppBarSection>
