@@ -1,9 +1,9 @@
 import { Card, CardTitle, CardImage, CardHeader, CardSubtitle } from '@progress/kendo-react-layout';
 import React from 'react';
 
-function SimpleCharityComponent(props) {
-    console.log(props.charity);
-    const { charity } = props;
+const SimpleCharityComponent = (props) => {
+    const charity = props.dataItem;
+    console.log(props)
     return (
         <div className="col-sm-12 col-md-4">
             <a className="card-link" href={`/charities/${charity.id}`}>

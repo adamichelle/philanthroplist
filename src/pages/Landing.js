@@ -1,3 +1,4 @@
+import { ListView } from "@progress/kendo-react-listview";
 import React, { useEffect, useState } from 'react';
 import { getRandomNElements } from '../utils/helpers';
 import { areasOfFocus } from '../data/areas_of_focus'
@@ -23,7 +24,7 @@ function Landing(props) {
 
                 if(!json.success) setError(json.message)
                 else  {
-                    const featuredCharities = getRandomNElements(json.data, 3)
+                    const featuredCharities = getRandomNElements(json.data.charities, 3)
                     setCharities(featuredCharities);
                     setIsLoaded(true)
                 }
@@ -44,9 +45,7 @@ function Landing(props) {
 
     const renderCharities = () => {
         if(isLoaded && charities && (typeof charities != "string") && charities.length > 0) {
-            return charities.map((charity, e) => {
-                return <SimpleCharityComponent key={e} charity={charity} page={"landing"} />
-            });
+            return <ListView data={charities} item={SimpleCharityComponent} className="p-k-listview py-2 px-5" />
         }
         else if(error) {
             return <div className="">
@@ -61,8 +60,8 @@ function Landing(props) {
                 <h2 className ="mb-4 text-center">Featured Charities</h2>
                 <div className="container-fluid pb-5">
 
+                { renderCharities() }
                         <div className="row py-2 px-5">
-                            { renderCharities() }
                         </div>
                 </div>
 

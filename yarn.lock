@@ -1564,6 +1564,13 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@progress/kendo-data-query@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-data-query/-/kendo-data-query-1.5.5.tgz#333422a24be47001465fe855c2e0bd8046eaeb36"
+  integrity sha512-V0Q4mgooLM/mThJnuSYI7bt7ZBQj3dwUHrubZEB6kkPu82p6KVLkTC9db3L3H/NFA9NvoioLRjSyccUMQlxcTw==
+  dependencies:
+    tslib "^1.7.0"
+
 "@progress/kendo-licensing@^1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@progress/kendo-licensing/-/kendo-licensing-1.1.4.tgz#24b9d8241c42b980d4c9940305425f65d27e2b0f"
@@ -1602,12 +1609,38 @@
     "@telerik/kendo-draggable" "^2.2.1"
     prop-types "^15.6.0"
 
+"@progress/kendo-react-data-tools@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-data-tools/-/kendo-react-data-tools-4.6.0.tgz#fe7e9aaaa928f624c03f52bcf49c76c2db1ae2c5"
+  integrity sha512-L9nR2nGnpq2PR7PKv2sYU+D9PbGbuJ6WtofCin/IgpJ3dAWws0VuX68DN2qrG0bI1F1x8vNeI2AJn0h6V/AbhQ==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-dropdowns@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-4.6.0.tgz#2025cc296b06b1eac730ada878dddc8d720e0c61"
+  integrity sha512-2cNL+Ls6RG+sF0/0fogldbBmJP5C3dEmZswIzShdxHRwFYHXL2ypkhhfxqg2t93YdRZW3vR7CmA146U2kM5Rsw==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
+    "@progress/kendo-react-labels" "4.6.0"
+    "@progress/kendo-react-popup" "4.6.0"
+    prop-types "^15.6.0"
+
 "@progress/kendo-react-intl@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-4.6.0.tgz#bbdcb8eeb2089195746cc9df24ba40aef1bdcaf6"
   integrity sha512-qAuH0nkwHFYI9BtZvWuFK7nc3OWHoIDSegz653It+DvtQWgikvEVvnM8I8NcVt6e5D0eSFpgr0BE7z7eGnl7FA==
   dependencies:
     "@telerik/kendo-intl" "^2.1.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-labels@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-labels/-/kendo-react-labels-4.6.0.tgz#11c6f85678250283ee9000fbb5b895f776eac0f7"
+  integrity sha512-8DOz8hCIsRCZRZleNhrWHi2Pp1NDgT7D9YwrohPpf5uN3tbpOPbaYatgecGlQLVG788kZs+Ic+L3m8HpWoB72A==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
     prop-types "^15.6.0"
 
 "@progress/kendo-react-layout@^4.6.0":
@@ -1641,6 +1674,14 @@
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-progressbars/-/kendo-react-progressbars-4.6.0.tgz#3c70d01870daaa90773d900fb621872570ee6787"
   integrity sha512-b0BqfkBUl8jTL5ZGkqIaKf8cdLwNDhHG1gVlPHSzjHaMtZUi4sFF9Aamt9v1qaSjo5Em29tyCJYxNvM/zBaTpA==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-treeview@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-treeview/-/kendo-react-treeview-4.6.0.tgz#53270f78e9f199b2ced41fd680555f8b07017f68"
+  integrity sha512-eeOJPArNLT+vzN6InSWEYEkT3X4mcOEe+OL/MVMJWcEK8cBD6AlHSfNNlV0q0TlClsvyQMYsdGQOKe9l06K5Zw==
   dependencies:
     "@progress/kendo-react-common" "4.6.0"
     prop-types "^15.6.0"
@@ -11248,7 +11289,7 @@ tryer@^1.0.0:
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
 
-tslib@^1.11.1, tslib@^1.9.0:
+tslib@^1.11.1, tslib@^1.7.0, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
