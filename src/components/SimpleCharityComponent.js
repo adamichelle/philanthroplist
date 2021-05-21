@@ -4,7 +4,7 @@ import React from 'react';
 const SimpleCharityComponent = (props) => {
     const charity = props.dataItem;
     return (
-        <div className="col-sm-12 col-md-4">
+        <div className="col-sm-12 col-md-4 mb-3">
             <a className="card-link" href={`/charities/${charity.id}`}>
                 <Card>
                     <CardImage src={charity.charity_image}

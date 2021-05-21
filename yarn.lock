@@ -1168,7 +1168,7 @@
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.6.1.tgz#dcbd23030a71c0c74fc95d4a3f75ba81653850e9"
   integrity sha512-L/ZnJRAq7F++utfuoTKX4CLBG5YR7tFO3PLzG1/oXXKEezJ0kRL3CMRoueBEmTCzVb/6SIs2Qlaw++uDgi5Xyg==
 
-"@firebase/app-types@0.6.2":
+"@firebase/app-types@0.6.2", "@firebase/app-types@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.6.2.tgz#8578cb1061a83ced4570188be9e225d54e0f27fb"
   integrity sha512-2VXvq/K+n8XMdM4L2xy5bYp2ZXMawJXluUIDzUBvMthVR+lhxK4pfFiqr1mmDbv9ydXvEAuFsD+6DpcZuJcSSw==
@@ -1571,6 +1571,20 @@
   dependencies:
     tslib "^1.7.0"
 
+"@progress/kendo-date-math@^1.4.0":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-date-math/-/kendo-date-math-1.5.2.tgz#816ae76a0e0ce5ea758f3c87f114ddf3a7486aef"
+  integrity sha512-xm9yY0B9VNRC6jnlqne1CTJQV3ipJAu40DCaaxua8g3nzDVxJWP8soFg5aCl+EmCIfLtx8EB2boRHP+Ju/IMWA==
+  dependencies:
+    tslib "^1.7.0"
+
+"@progress/kendo-drawing@^1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-drawing/-/kendo-drawing-1.10.1.tgz#399052b18149cc785c48bf7893fd2021fbb9c8f0"
+  integrity sha512-TuGNh7r4HbmE9KB0HOyIPiaW1HBPqjbeGal3C/uqr4Lu1rQSNg1Rl+DjY5C9mKHxXl+L6T0bexLJOANxy8cTpg==
+  dependencies:
+    "@progress/pako-esm" "^1.0.1"
+
 "@progress/kendo-licensing@^1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@progress/kendo-licensing/-/kendo-licensing-1.1.4.tgz#24b9d8241c42b980d4c9940305425f65d27e2b0f"
@@ -1583,7 +1597,7 @@
   resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.8.0.tgz#02ec32974762f30bdb2bb968e3c5b73c76c82c33"
   integrity sha512-/cu0nV+3tHKPEE/bUbJTJHv6t8BMYpwI3uVOYENASYy+ZK1dlOfuRhdpSGH85glAH6NMtr/5pYOPojuXFFz/8A==
 
-"@progress/kendo-react-animation@4.6.0":
+"@progress/kendo-react-animation@4.6.0", "@progress/kendo-react-animation@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-4.6.0.tgz#d0b40fd00779e405b3a23e1f3e32c2473afed364"
   integrity sha512-0yiQEewYaZEO/m+2kpssq/Arv8RxlEqj/MGdMdfuAkWNX1/q7/bPk5nXyqAJo4MT8YbvRhwksSnYqwxbeCjlTg==
@@ -1592,7 +1606,7 @@
     prop-types "^15.6.0"
     react-transition-group "^2.2.0"
 
-"@progress/kendo-react-buttons@^4.6.0":
+"@progress/kendo-react-buttons@4.6.0", "@progress/kendo-react-buttons@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-buttons/-/kendo-react-buttons-4.6.0.tgz#95fba8d11e198b55a31fc6a6036757b5d0a97973"
   integrity sha512-8FucWMQ7+D1ETf/HHm/q/6cw180Y8MHIfeFjpd1nebnvtdB89rCM2ruFBXYYOJq+HT4VQ3/PCvFJ3kHMQp5Hog==
@@ -1617,10 +1631,40 @@
     "@progress/kendo-react-common" "4.6.0"
     prop-types "^15.6.0"
 
+"@progress/kendo-react-dateinputs@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dateinputs/-/kendo-react-dateinputs-4.6.0.tgz#f6c3412159d3247345e1ec32991ad726bb28dfd6"
+  integrity sha512-ReQDN2r1X2IXSjkMinB7nwG6yMPVggAG4+eIOo1Hw3vXljRGQR/piHYSPuI/8rHvEIBY53Pd/uRaLYzBbW+8jQ==
+  dependencies:
+    "@progress/kendo-date-math" "^1.4.0"
+    "@progress/kendo-react-buttons" "4.6.0"
+    "@progress/kendo-react-common" "4.6.0"
+    "@progress/kendo-react-labels" "4.6.0"
+    "@progress/kendo-react-popup" "4.6.0"
+    prop-types "^15.6.0"
+
 "@progress/kendo-react-dropdowns@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-4.6.0.tgz#2025cc296b06b1eac730ada878dddc8d720e0c61"
   integrity sha512-2cNL+Ls6RG+sF0/0fogldbBmJP5C3dEmZswIzShdxHRwFYHXL2ypkhhfxqg2t93YdRZW3vR7CmA146U2kM5Rsw==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
+    "@progress/kendo-react-labels" "4.6.0"
+    "@progress/kendo-react-popup" "4.6.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-indicators@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-indicators/-/kendo-react-indicators-4.6.0.tgz#05653c3de2200578cdb38b2923e0802f987b8638"
+  integrity sha512-AdzeP/NOQOtPvhvGryFGiWG0rWBY9rzL/3ugHeq1vq21oFd9LZUUxI750rVYOPbyk5zT/XWdwYmXm1GXWeFA5g==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-inputs@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-inputs/-/kendo-react-inputs-4.6.0.tgz#f51fdd6fdb55e07918e707652d1fefeb8428e3a6"
+  integrity sha512-XouVhNueFqrLWzWp6TTCorb3Ir9M0fnsVAV1RUVoUPTHnVG4y/m/Tpo5mlK1CUxmQ5QrFVW744w6uJddPahFhQ==
   dependencies:
     "@progress/kendo-react-common" "4.6.0"
     "@progress/kendo-react-labels" "4.6.0"
@@ -1661,7 +1705,7 @@
     "@progress/kendo-react-common" "4.6.0"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-popup@4.6.0":
+"@progress/kendo-react-popup@4.6.0", "@progress/kendo-react-popup@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-4.6.0.tgz#ab79744ed701d8e1f9c700f38e962c2823bcfa03"
   integrity sha512-EmX8C07z+I1X62De0osykUoO2oEsdnUvshy7J2Cp3pDxpbfc+MxzPUkzDAiuS6liDrFLeBomkDHklSdrjr3LGg==
@@ -1690,6 +1734,11 @@
   version "4.35.1"
   resolved "https://registry.yarnpkg.com/@progress/kendo-theme-bootstrap/-/kendo-theme-bootstrap-4.35.1.tgz#fae6262053cddf6a472f2c5c71ec953583046a8b"
   integrity sha512-lq2edhCLcqUSJP0XPUYHMFr3rgtvwFQpxSuF1zUi1gzTR1ty0x37lY3ZkayRhFXnp+BwflKxcO1VqyUq17Ng2w==
+
+"@progress/pako-esm@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@progress/pako-esm/-/pako-esm-1.0.1.tgz#eeb7d2c3f8e865198edf23fb42645bd8cb513a11"
+  integrity sha512-O4A3b1EuE9Xe1pC3Xz9Tcn1M/CYrL71f4y/5TXeytOVTkmkzBgYW97fYP2f+54H0e0erWRaqV/kUUB/a8Uxfbw==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -2824,6 +2873,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.0.1.tgz#e7939d599119dc818a90478a2a299bdaff037e09"
+  integrity sha512-Fl79+wsLOZKoiU345KeEaWD0ik8WKRI5zm0YSPj2oF1Qr+BO7z0fco6GbUtqjoG1h4VI89PeKJnMsMMVQdKKTw==
 
 brace-expansion@^1.1.7:
   version "1.1.11"

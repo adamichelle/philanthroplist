@@ -51,6 +51,21 @@
   margin-left: -15px;
 }
 
+.k-pager-wrap.p-k-pager-wrap {
+  background-color: transparent;
+  border: none;
+}
+
+.k-pager-wrap.p-k-pager-wrap .k-pager-numbers .k-link {
+  border-color: #FFDAA6;
+  background-color: #E69B55;
+}
+
+.k-pager-wrap.p-k-pager-wrap .k-pager-numbers .k-link.k-state-selected {
+  border-color: #826C5F;
+  background-color: #826C5F;
+}
+
 header {
   background-color: transparent;
 }
