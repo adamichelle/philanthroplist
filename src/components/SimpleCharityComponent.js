@@ -3,7 +3,6 @@ import React from 'react';
 
 const SimpleCharityComponent = (props) => {
     const charity = props.dataItem;
-    console.log(props)
     return (
         <div className="col-sm-12 col-md-4">
             <a className="card-link" href={`/charities/${charity.id}`}>

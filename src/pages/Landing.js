@@ -59,10 +59,7 @@ function Landing(props) {
             { isLoaded && <section className="featured-charities">
                 <h2 className ="mb-4 text-center">Featured Charities</h2>
                 <div className="container-fluid pb-5">
-
-                { renderCharities() }
-                        <div className="row py-2 px-5">
-                        </div>
+                    { renderCharities() }
                 </div>
 
                 <hr className="special"></hr>
