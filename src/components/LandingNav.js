@@ -4,17 +4,18 @@ import {
     AppBarSection,
     AppBarSpacer
 } from "@progress/kendo-react-layout";
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
     return (
         <React.Fragment>
             <AppBar themeColor="inherit">
                 <AppBarSection>
-                    <img src="/images/logo.png" alt="" width={50} height={50} className="logo" />
+                    <Link to="/"><img src="/images/logo.png" alt="" width={50} height={50} className="logo" /></Link>
                 </AppBarSection>
                 
                 <AppBarSection>
-                    <a href="/" className="p-title">Philanthroplist</a>
+                    <Link to="/" className="p-title">Philanthroplist</Link>
                 </AppBarSection>
 
                 <AppBarSpacer />
@@ -22,7 +23,7 @@ function Nav(props) {
                 <AppBarSection>
                     <ul>
                         <li>
-                        <a href="/about">About</a>
+                        <Link to="/about">About</Link>
                         </li>
                     </ul>
                 </AppBarSection>

@@ -1,11 +1,12 @@
 import { Card, CardTitle, CardImage, CardHeader, CardSubtitle } from '@progress/kendo-react-layout';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SimpleCharityComponent = (props) => {
     const charity = props.dataItem;
     return (
         <div className="col-sm-12 col-md-4 mb-3">
-            <a className="card-link" href={`/charities/${charity.id}`}>
+            <Link className="card-link" to={`/charities/${charity.id}`}>
                 <Card>
                     <CardImage src={charity.charity_image}
                         style={{
@@ -29,7 +30,7 @@ const SimpleCharityComponent = (props) => {
                         </CardSubtitle>
                     </CardHeader>
                 </Card>
-            </a>
+            </Link>
         </div>
     )
 }

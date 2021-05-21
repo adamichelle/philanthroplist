@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { LandingNav, Nav } from '../components';
 
 function Header(props) {
@@ -11,7 +12,7 @@ function Header(props) {
                     <div className="banner-content-area text-white text-center mt-5 pt-5">
                         <h1>A Catalog for Local Nigerian Charities.</h1>
                         <h3>Find a local charity with cause dear to your heart and learn how to pay it forward.</h3>
-                        <a href="/charities" className="btn font-weight-bold p-btn-gold">Get Started</a>
+                        <Link to="/charities" className="btn font-weight-bold p-btn-gold">Get Started</Link>
                     </div>
 
                     <div className="hero">
