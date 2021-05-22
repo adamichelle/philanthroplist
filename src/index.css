@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFFCF7;
+  color: #222222;
 }
 
 code {
@@ -35,6 +36,10 @@ code {
   color: #C6803F !important;
 }
 
+.p-text-golden-yellow {
+  color: #E69B55 !important;
+}
+
 .p-text-peach-puff {
   color: #FFDAA6 !important;
 }
@@ -61,6 +66,11 @@ code {
 
 .p-bg-greyish-green {
   background-color: #6E7E74;
+}
+
+.p-sr-only {
+  position: absolute;
+  top: -9999px;
 }
 
 hr.special {

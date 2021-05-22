@@ -107,6 +107,10 @@ header {
   top: 0;
 }
 
+.color-overlay.p-charity-image-overlay {
+  position: relative;
+}
+
 .banner-content-area  h1 {
 font: 3em "Raleway", sans-serif;
 font-weight: bold;
@@ -144,4 +148,13 @@ footer hr {
 
 .attribution-links p {
   margin-bottom: 0;
+}
+
+.p-charity-involvement-options {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 5;
 }

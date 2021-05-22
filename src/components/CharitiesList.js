@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import SimpleCharityComponent from '../components/SimpleCharityComponent';
 
 function CharitiesList(props) {
-    console.log(props)
     const { charities, count, page, limit, getPage } = props;
     const skip = (page - 1) * limit;
     const [ selectedPage, setSelectedPage ] = useState(page)
