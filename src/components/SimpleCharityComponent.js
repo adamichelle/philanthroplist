@@ -2,7 +2,7 @@ import { Card, CardTitle, CardImage, CardHeader, CardSubtitle } from '@progress/
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SimpleCharityComponent = (props) => {
+function SimpleCharityComponent (props) {
     const charity = props.dataItem;
     return (
         <div className="col-sm-12 col-md-4 mb-3">

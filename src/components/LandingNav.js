@@ -25,6 +25,9 @@ function Nav(props) {
                         <li>
                         <Link to="/about">About</Link>
                         </li>
+                        <li>
+                        <Link to="/suggest-a-charity">Suggest a Charity</Link>
+                        </li>
                     </ul>
                 </AppBarSection>
             </AppBar>

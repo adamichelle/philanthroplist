@@ -2,8 +2,7 @@ import { ListView } from "@progress/kendo-react-listview";
 import React, { useEffect, useState } from 'react';
 import { getRandomNElements } from '../utils/helpers';
 import { areasOfFocus } from '../data/areas_of_focus'
-import CategoryComponent from '../components/CategoryComponent';
-import SimpleCharityComponent from '../components/SimpleCharityComponent';
+import { CategoryComponent, SimpleCharityComponent } from '../components';
 
 function Landing(props) {
     const { getNavType } = props;

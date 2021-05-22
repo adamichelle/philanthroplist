@@ -3,7 +3,7 @@ import { areasOfFocus } from '../data/areas_of_focus';
 import { MultiSelect } from '@progress/kendo-react-dropdowns';
 import { filterBy } from "@progress/kendo-data-query";
 import { Loader } from "@progress/kendo-react-indicators";
-import CharitiesList from '../components/CharitiesList';
+import { CharitiesList } from '../components';
 
 function Charities(props) {
     const { getNavType, match, withSelectedAreaOfFocus } = props;

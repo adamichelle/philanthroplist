@@ -1,6 +1,6 @@
 import { Loader } from '@progress/kendo-react-indicators';
 import React, { useEffect, useState } from 'react';
-import DetailedCharityComponent from '../components/DetailedCharityComponent';
+import { DetailedCharityComponent } from '../components';
 
 function Charity(props) {
     const { getNavType, match } = props;

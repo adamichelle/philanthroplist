@@ -28,6 +28,9 @@ function Nav(props) {
                         <li>
                             <Link to="/charities" className="p-text-gold">Explore</Link>
                         </li>
+                        <li>
+                        <Link to="/suggest-a-charity" className="p-text-golden-yellow font-weight-bold">Suggest a Charity</Link>
+                        </li>
                     </ul>
                 </AppBarSection>
             </AppBar>
