@@ -9,9 +9,9 @@ function Header(props) {
                 <React.Fragment>
                     <LandingNav />
                     
-                    <div className="banner-content-area text-white text-center mt-5 pt-5">
+                    <div className="banner-content-area text-white text-center pt-2 mt-sm-5 pt-sm-5">
                         <h1>A Catalog for Local Nigerian Charities.</h1>
-                        <h3>Find a local charity with cause dear to your heart and learn how to pay it forward.</h3>
+                        <h3>Find and support a local charity with cause dear to your heart.</h3>
                         <Link to="/charities" className="btn font-weight-bold p-btn-gold">Get Started</Link>
                     </div>
 

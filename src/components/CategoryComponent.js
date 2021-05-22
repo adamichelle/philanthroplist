@@ -6,7 +6,7 @@ function CategoryComponent(props) {
     const { category } = props;
 
     return(
-        <div className="col-sm-12 col-md-6 col-lg-4">
+        <div className="col-sm-12 col-md-6 col-lg-4 mb-3">
             <a className="card-link" href={`/categories/${category.value}`}>
                 <Card className="py-4"
                     style={{

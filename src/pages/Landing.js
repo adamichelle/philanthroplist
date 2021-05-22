@@ -56,8 +56,8 @@ function Landing(props) {
 
     return(
         <React.Fragment>
-            { isLoaded && <section className="featured-charities">
-                <h2 className ="mb-4 text-center">Featured Charities</h2>
+            { isLoaded && <section className="featured-charities pt-5">
+                <h2 className ="my-4 text-center">Featured Charities</h2>
                 <div className="container-fluid pb-5">
                     { renderCharities() }
                 </div>
@@ -65,7 +65,7 @@ function Landing(props) {
                 <hr className="special"></hr>
             </section> }
 
-            <section className="featured-areas-of-focus">
+            <section className={`featured-areas-of-focus${isLoaded ? "" : " pt-5 "}`}>
                 <h2 className ="mb-4 text-center">Featured Areas of Focus</h2>
                 <div className="container-fluid pb-5 mb-5">
 
