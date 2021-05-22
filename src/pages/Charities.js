@@ -6,12 +6,19 @@ import { Loader } from "@progress/kendo-react-indicators";
 import CharitiesList from '../components/CharitiesList';
 
 function Charities(props) {
-    const { getNavType } = props;
+    const { getNavType, match, withSelectedAreaOfFocus } = props;
+    let preSelectedValues = [];
+    let areaOfFocusName;
+
+    if(withSelectedAreaOfFocus) {
+        areaOfFocusName = match.params.areaOfFocusName;
+        preSelectedValues.push(areaOfFocusName);
+    }
 
     const areasOfFocusNames = areasOfFocus.map(area => area.name);
     const limit = 5;
 
-    const [ values, setValues ] = useState([]);
+    const [ values, setValues ] = useState(preSelectedValues);
     const [ options, setOptions ] = useState(areasOfFocusNames.slice());
     const [ page, setPage ] = useState(1);
     const [ error, setError ] = useState(null);
@@ -70,7 +77,12 @@ function Charities(props) {
             <section className="filters">
                 <div className="container pt-5">
                     <div className="row">
-                        <div className="col-sm-12 col-md-6 col-lg-4">
+                        {withSelectedAreaOfFocus &&
+                            <div className="col-sm-12">
+                                <h1 className="mb-0">Charities focused on {areaOfFocusName}</h1>
+                            </div>
+                        }
+                        {!withSelectedAreaOfFocus && <div className="col-sm-12 col-md-6 col-lg-4">
                             <MultiSelect
                                 data={options}
                                 onChange={handleChange}
@@ -78,7 +90,7 @@ function Charities(props) {
                                 onFilterChange={filterChange}
                                 label="Area of Focus"
                             />
-                        </div>
+                        </div> }
                     </div>
                 </div>
             </section>
