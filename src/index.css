@@ -27,6 +27,12 @@ code {
   border: none !important;
 }
 
+.p-btn-golden-yellow {
+  background-color: #C6803F !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
 .p-btn-gold:hover {
   background-color: #C6803F !important;
   color: #FFFFFF;

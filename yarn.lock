@@ -1643,6 +1643,14 @@
     "@progress/kendo-react-popup" "4.6.0"
     prop-types "^15.6.0"
 
+"@progress/kendo-react-dialogs@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dialogs/-/kendo-react-dialogs-4.6.0.tgz#5a2f0a1b4dd8200ed2f04c0240558349ff8df0d4"
+  integrity sha512-mZ2DUIlxvYcI+jrBqyqtAs9ZGdytrkEeRtozNr9hPW9EmVdXiS9JzDH+Cx5in8FDjTkADSbGwXthLcA3p9u3tw==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
+    prop-types "^15.6.0"
+
 "@progress/kendo-react-dropdowns@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-4.6.0.tgz#2025cc296b06b1eac730ada878dddc8d720e0c61"
@@ -1651,6 +1659,14 @@
     "@progress/kendo-react-common" "4.6.0"
     "@progress/kendo-react-labels" "4.6.0"
     "@progress/kendo-react-popup" "4.6.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-form@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-form/-/kendo-react-form-4.6.0.tgz#6786ad0ca953cd2d9c36c8324a73205128239222"
+  integrity sha512-TY4JFLgigkBpdkVOPbGbNEN4jvf2pmofqH/nVRSq6CYuDMCFejLFC78BuyYwg2fKMsm/ijfFe935uFKxTzMLLg==
+  dependencies:
+    "@progress/kendo-react-common" "4.6.0"
     prop-types "^15.6.0"
 
 "@progress/kendo-react-indicators@^4.6.0":
@@ -1679,7 +1695,7 @@
     "@telerik/kendo-intl" "^2.1.0"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-labels@4.6.0":
+"@progress/kendo-react-labels@4.6.0", "@progress/kendo-react-labels@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-labels/-/kendo-react-labels-4.6.0.tgz#11c6f85678250283ee9000fbb5b895f776eac0f7"
   integrity sha512-8DOz8hCIsRCZRZleNhrWHi2Pp1NDgT7D9YwrohPpf5uN3tbpOPbaYatgecGlQLVG788kZs+Ic+L3m8HpWoB72A==
