@@ -37,8 +37,14 @@ export const areasOfFocus = [
     },
     {
         "name": "Women Empowerment",
-        "value": 5,
+        "value": 7,
         "icon": "images/women-empowerment.png",
+        "iconType": "image"
+    },
+    {
+        "name": "Women Health",
+        "value": 8,
+        "icon": "images/women-health.png",
         "iconType": "image"
     }
 ]

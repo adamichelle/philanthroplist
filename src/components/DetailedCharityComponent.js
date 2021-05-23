@@ -45,18 +45,23 @@ function DetailedCharityComponent(props) {
                             return area_of_focus.stringValue + ' | '
                     }) }
                 </p>
+
+                {!charityInfo.is_registered.booleanValue &&
+                    <p className="p-text-greyish-green font-weight-bold">Unverified Registration</p>
+                }
+                
                 <p className="mb-0">CAC Registration: { charityInfo.cac_reg_no.stringValue.length > 0 ? charityInfo.cac_reg_no.stringValue : "NA" }</p>
                 <p>Other Registration Information: { charityInfo.additional_reg_info.stringValue.length > 0 ? charityInfo.additional_reg_info.stringValue: "NA" }</p>
                 
                 <p className="mb-0"><FontAwesomeIcon icon="map-marker-alt" className="p-text-greyish-green mr-2" />{ charityInfo.address.stringValue }</p>
-                <p className="mb-0"><FontAwesomeIcon icon="at" className="p-text-greyish-green mr-2" />{ charityInfo.email.stringValue }</p>
-                <p className="mb-0"><FontAwesomeIcon icon="phone-alt" className="p-text-greyish-green mr-2" />{ charityInfo.phone.stringValue }</p>
+                <p className="mb-0"><FontAwesomeIcon icon="at" className="p-text-greyish-green mr-2" />{ charityInfo.email.stringValue.length > 0 ? charityInfo.email.stringValue : "NA" }</p>
+                <p className="mb-0"><FontAwesomeIcon icon="phone-alt" className="p-text-greyish-green mr-2" />{ charityInfo.phone.stringValue.length > 0 ? charityInfo.phone.stringValue : "NA" }</p>
                 <p><FontAwesomeIcon icon="link" className="p-text-greyish-green mr-2" /> <a target="__blank" href={ charityInfo.website.stringValue } className="p-text-golden-yellow font-weight-bold">{charityInfo.name.stringValue}</a></p>
 
                 <h2>Description <span className="p-text-golden-yellow">*</span></h2>
                 <p>{ charityInfo.description.stringValue }</p>
 
-                <p className="p-description-footnote font-weight-bold"><span className="p-text-golden-yellow">*</span> Some descriptions and images have been culled from the information provided by the charity's website.</p>
+                <p className="p-description-footnote font-weight-bold"><span className="p-text-golden-yellow">*</span> Some descriptions and images have been culled from the information provided by the charity's website and socials.</p>
 
                 <br />
 
