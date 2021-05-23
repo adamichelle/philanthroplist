@@ -51,9 +51,12 @@ function DetailedCharityComponent(props) {
                 <p className="mb-0"><FontAwesomeIcon icon="map-marker-alt" className="p-text-greyish-green mr-2" />{ charityInfo.address.stringValue }</p>
                 <p className="mb-0"><FontAwesomeIcon icon="at" className="p-text-greyish-green mr-2" />{ charityInfo.email.stringValue }</p>
                 <p className="mb-0"><FontAwesomeIcon icon="phone-alt" className="p-text-greyish-green mr-2" />{ charityInfo.phone.stringValue }</p>
-                <p><FontAwesomeIcon icon="link" className="p-text-greyish-green mr-2" /> <a target="__blank" href={ charityInfo.website.stringValue } className="p-text-golden-yellow">{charityInfo.name.stringValue}</a></p>
+                <p><FontAwesomeIcon icon="link" className="p-text-greyish-green mr-2" /> <a target="__blank" href={ charityInfo.website.stringValue } className="p-text-golden-yellow font-weight-bold">{charityInfo.name.stringValue}</a></p>
 
-                <h2>Description</h2>
+                <h2>Description <span className="p-text-golden-yellow">*</span></h2>
+                <p>{ charityInfo.description.stringValue }</p>
+
+                <p className="p-description-footnote font-weight-bold"><span className="p-text-golden-yellow">*</span> Some descriptions and images have been culled from the information provided by the charity's website.</p>
 
                 <br />
 

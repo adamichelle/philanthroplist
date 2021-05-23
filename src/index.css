@@ -86,3 +86,11 @@ hr.special {
 	border: 0;
 	margin-bottom: 50px;
 }
+
+.p-description-footnote {
+  font-size: 0.8em;
+}
+
+.p-description-footnote span {
+  font-size: initial;
+}
