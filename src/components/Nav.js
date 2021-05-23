@@ -23,7 +23,7 @@ function Nav(props) {
                 <AppBarSection>
                     <ul>
                         <li>
-                            <Link to="/" className="p-text-gold">About</Link>
+                            <Link to="/about" className="p-text-gold">About</Link>
                         </li>
                         <li>
                             <Link to="/charities" className="p-text-gold">Explore</Link>
