@@ -24,7 +24,10 @@ function DetailedCharityComponent(props) {
                             involvementOptionLink = charityInfo.donation_link.stringValue;
                             }
                             else if((option.stringValue === 'volunteering' || option.stringValue === 'Volunteering') && charityInfo.volunteering_info) {
-                            involvementOptionLink = charityInfo.volunteering_info.stringValue;
+                             involvementOptionLink = charityInfo.volunteering_info.stringValue;
+                            }
+                            else if((option.stringValue === 'partnership' || option.stringValue === 'Partnership') && charityInfo.partnership_info && charityInfo.partnership_info.stringValue.length > 0) {
+                                involvementOptionLink = charityInfo.partnership_info.stringValue;
                             }
                             else {
                                 involvementOptionLink = charityInfo.contact.stringValue
