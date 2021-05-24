@@ -54,8 +54,8 @@ const getModifiedCharitiesArray = (charitiesArray) => {
         charity.charity_image = result.secure_url;
         const involvementOptions = charity.involvement_options.split(/,\s+|,/g);
         charity.involvement_options = involvementOptions;
-        const categories = charity.categories.split(/,\s+|,/g);
-        charity.categories = categories;
+        const area_of_focus = charity.area_of_focus.split(/,\s+|,/g);
+        charity.area_of_focus = area_of_focus;
         charity.createdAt = admin.firestore.Timestamp.fromDate(new Date());
         charity.updatedAt = admin.firestore.Timestamp.fromDate(new Date());
 
